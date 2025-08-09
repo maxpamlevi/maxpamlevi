@@ -1,3 +1,5 @@
+<img src="https://cdn.svgator.com/images/2024/01/svgator-bird-alligator-cta.gif" class="kg-product-card-image lightense-target" loading="lazy">
+
 <h1 align="center">Fullstack Developer — ship delightful, blazing‑fast web experiences</h1>
 
 <p align="center">
@@ -17,29 +19,6 @@
 I'm a web developer with over 5 years of experience in both front-end and back-end development. I enjoy solving front end problems and creating the best user experience for users. I also spend time learning new technologies and best practices to become a better engineer.
 
 ---
-
- Front‑end
-- Angular, Next.js
-- JavaScript, jQuery
-- CSS3, HTML5, Responsive Design
-- Bootstrap
-
-Back‑end
-- Ruby, Ruby on Rails, Node.js
-- Sidekiq, Redis
-- MySQL, PostgreSQL
-
-Testing
-- RSpec, Jest, Karma, Unit Testing
-
-Tools
-- Git, WebSocket
-- Google Maps API
-- Third‑party API Integration
-
----
-
-Biểu tượng công nghệ
 
 <p align="center">
   <!-- Front-end -->
