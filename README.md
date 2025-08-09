@@ -104,17 +104,3 @@ GitHub Insights
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=maxpamlevi&radius=12&theme=github-compact&area=true&hide_border=true" alt="activity graph" />
 </p>
-
----
-
-Ghi chú triển khai
-- README này sẽ hiển thị khi bạn tạo repo trùng tên tài khoản: github.com/maxpamlevi/maxpamlevi
-- Một số widget có thể bị rate‑limit. Nếu cần:
-  - Triển khai self‑host (Vercel) cho github‑readme‑stats hoặc thay theme=transparent bằng chủ đề khác.
-  - Tắt/bật vài card để nhẹ hơn.
-- Thêm liên hệ cá nhân (email/LinkedIn) vào phần trên cùng.
-- Thêm số liệu thực chiến cho dự án tiêu biểu (LCP/INP, giảm bundle, tăng CR).
-
-<p align="right">
-  <img src="https://komarev.com/ghpvc/?username=maxpamlevi&label=Profile%20views&color=0e75b6&style=flat" alt="views" />
-</p>
