@@ -18,8 +18,7 @@ I'm a web developer with over 5 years of experience in both front-end and back-e
 
 ---
 
-Tech radar nhanh
-Front‑end
+ Front‑end
 - Angular, Next.js
 - JavaScript, jQuery
 - CSS3, HTML5, Responsive Design
@@ -78,7 +77,7 @@ Biểu tượng công nghệ
 
 ---
 
-Dự án tiêu biểu
+Project
 - Portfolio/Playground: https://maxpamlevi.github.io
   
 - Phriendly Phishing — Phriendly Phishing offers leading phishing simulation and phishing simulation training programs designed to ward off potential cyber threats.
@@ -107,104 +106,6 @@ GitHub Insights
 </p>
 
 ---
-
-Snippet ưa thích (TypeScript + React): useSmartImage — ưu tiên UX, hiệu năng và a11y
-- Tự động lazy‑load, placeholder mờ, preconnect CDN, tôn trọng prefers‑reduced‑motion.
-- Giảm layout shift với intrinsic ratio và decoding async.
-
-```tsx
-import React, { useEffect, useMemo } from "react";
-
-type SmartImageProps = {
-  src: string;
-  alt: string;
-  width: number;
-  height: number;
-  priority?: boolean;
-  className?: string;
-  sizes?: string;
-  fetchPriority?: "high" | "low" | "auto";
-};
-
-const cdn = (url: string, w: number) =>
-  `${url}${url.includes("?") ? "&" : "?"}w=${w}&auto=format&fit=max`;
-
-export function SmartImage({
-  src,
-  alt,
-  width,
-  height,
-  priority,
-  className,
-  sizes = "(min-width: 768px) 50vw, 100vw",
-  fetchPriority = priority ? "high" : "auto",
-}: SmartImageProps) {
-  const ratio = `${(height / width) * 100}%`;
-  const srcSet = useMemo(
-    () =>
-      [320, 640, 960, 1200, 1600]
-        .map((w) => `${cdn(src, w)} ${w}w`)
-        .join(", "),
-    [src]
-  );
-
-  useEffect(() => {
-    if (!priority) return;
-    // Preconnect nhẹ nhàng đến CDN để tối ưu handshake
-    try {
-      const u = new URL(src);
-      const link = document.createElement("link");
-      link.rel = "preconnect";
-      link.href = `${u.protocol}//${u.host}`;
-      document.head.appendChild(link);
-      return () => document.head.removeChild(link);
-    } catch {}
-  }, [src, priority]);
-
-  return (
-    <figure style={{ display: "block" }}>
-      <div
-        style={{
-          position: "relative",
-          width: "100%",
-          paddingTop: ratio, // intrinsic ratio tránh CLS
-          overflow: "hidden",
-          borderRadius: 12,
-          background:
-            "linear-gradient(90deg,#f3f3f3 25%,#ecebeb 37%,#f3f3f3 63%)",
-          animation:
-            window.matchMedia?.("(prefers-reduced-motion: reduce)").matches
-              ? "none"
-              : "loadingShimmer 1.2s infinite",
-        }}
-      >
-        <img
-          loading={priority ? "eager" : "lazy"}
-          decoding="async"
-          src={cdn(src, 960)}
-          srcSet={srcSet}
-          sizes={sizes}
-          width={width}
-          height={height}
-          alt={alt}
-          fetchPriority={fetchPriority}
-          style={{
-            position: "absolute",
-            inset: 0,
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-          }}
-          className={className}
-        />
-      </div>
-      <figcaption style={{ fontSize: 12, color: "#6b7280", marginTop: 8 }}>
-        {alt}
-      </figcaption>
-    </figure>
-  );
-}
-```
 
 Ghi chú triển khai
 - README này sẽ hiển thị khi bạn tạo repo trùng tên tài khoản: github.com/maxpamlevi/maxpamlevi
