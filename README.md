@@ -1,4 +1,4 @@
-<img src="https://cdn.svgator.com/images/2024/01/svgator-bird-alligator-cta.gif" class="kg-product-card-image lightense-target" loading="lazy">
+<img src="https://cdn.svgator.com/images/2024/01/svgator-bird-alligator-cta.gif" class="kg-product-card-image lightense-target" width="100%">
 
 <h1 align="center">Fullstack Developer — ship delightful, blazing‑fast web experiences</h1>
 
